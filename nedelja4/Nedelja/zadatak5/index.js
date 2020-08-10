@@ -1,10 +1,6 @@
-// {
-//     let sortedBySpeed = [Bulbsaur.karakteristike.brzina, Nidoran.karakteristike.brzina,Sandslash.karakteristike.brzina,Raichu.karakteristike.brzina]; 
-    
-//     sortedBySpeed.sort((a,b) => a - b);
-//     console.log(sortedBySpeed)
-    
-// }
+
+const pokemoni =   [
+
 
 let pokemon1 = {
     ime: 'Bulbsaur',
@@ -30,10 +26,33 @@ let pokemon4 = {
     Sposobnosti: ['Static', 'Surge Surfer', 'Lightning Rod'],
     Karakteristike: {napad: 60, odbrana: 90, brzina: 50}
 }
+]
+// let pokemoniNiz = ['pokemon1','pokemon2','pokemon3','pokemon4']
 
-let pokemoniNiz = ['pokemon1','pokemon2','pokemon3','pokemon4']
 
-console.log(pokemoniNiz)
+const body = document.querySelector('#body')
+const img = document.querySelector('#img')
+const div = document.querySelector('#list')
+const form = document.querySelector('#form')
+const btn1 = document.querySelector('#prikaz')
+form.appendChild(btn1)
+body.appendChild(form)
+body.appendChild(div)
 
-pokemoniNiz.sort((a,b) => a.Karakteristike.brzina - b.Karakteristike.brzina);
-console.log(pokemoni);
+
+
+btn1.addEventListener('click', e =>{
+    // e.preventDefault()
+    pokemoni.forEach(e => {
+        const p = document.querySelector('#p')
+        p.textContent = pokemoni.ime
+        div.appendChild(p)
+        return
+    })
+    
+console.log(p)
+    
+})
+
+
+

@@ -1,11 +1,3 @@
-// {
-//     let sortedBySpeed = [Bulbsaur.karakteristike.brzina, Nidoran.karakteristike.brzina,Sandslash.karakteristike.brzina,Raichu.karakteristike.brzina]; 
-    
-//     sortedBySpeed.sort((a,b) => a - b);
-//     console.log(sortedBySpeed)
-    
-// }
-
 let pokemon1 = {
     ime: 'Bulbsaur',
     vrsta: 'Grass',
@@ -16,8 +8,8 @@ let  pokemon2 = {
     ime: 'Nidoran',
     vrsta: 'poison',
     Sposobnosti: ['Poison Point','Hustle','Rivalry'],
-    Karakteristike: {napad: 58, odbrana: 30, brzina: 70}
-}
+    Karakteristike: {napad: 58, odbrana: 30, brzina: 7}
+}                                                        
 let pokemon3 = {
     ime: 'Sandslash',
     vrsta: 'Ground',
@@ -31,9 +23,16 @@ let pokemon4 = {
     Karakteristike: {napad: 60, odbrana: 90, brzina: 50}
 }
 
-let pokemoniNiz = ['pokemon1','pokemon2','pokemon3','pokemon4']
+let pokemoniNiz = [pokemon1, pokemon2, pokemon3, pokemon4]
 
-console.log(pokemoniNiz)
 
-pokemoniNiz.sort((a,b) => a.Karakteristike.brzina - b.Karakteristike.brzina);
-console.log(pokemoni);
+  
+
+
+    function najjaci(pokemoniNiz){
+        pokemoniNiz.sort((a, b) => b.Karakteristike.napad - a.Karakteristike.napad);
+        return pokemoniNiz;
+        };
+        console.log(pokemoniNiz)
+        
+    

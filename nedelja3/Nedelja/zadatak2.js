@@ -1,7 +1,12 @@
 {
     function lifeSupply(numPerMonth,age){
         let rezultat = numPerMonth * ((100 - age)*12);
+        console.log(rezultat);
         return rezultat;
     }
+    
 }
-console.log(lifeSupply(10,26));
+
+
+
+    lifeSupply(10,26)
